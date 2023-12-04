@@ -73,5 +73,5 @@ const LandingJuegav2 = () => {
         </div>
   );
 };
-
+//HOLA MUNDO
 export default LandingJuegav2;
