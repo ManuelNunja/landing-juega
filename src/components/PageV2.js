@@ -1,8 +1,12 @@
 // src/components/Page.js
 import React, { forwardRef, useState } from 'react';
 import Background from './Background';
+import BotonWhatsApp from './BotonWhatsApp';
+import Popup from './Popup';
+import VideoPlayer from './VideoPlayer';
+import video1 from "../resources/video/video1.mp4";
 
-const Page = forwardRef(({ backColor, children, className, src, shouldAnimate  }, ref) => {
+const Page = forwardRef(({ index, backColor, className, src, shouldAnimate, whappMessage, fileVideo, children  }, ref) => {
     const pageStyle = {
         transition: 'background 0.35s ease',
         width: '100%',
@@ -19,11 +23,14 @@ const Page = forwardRef(({ backColor, children, className, src, shouldAnimate  }
     const togglePopup = () => setIsPopupOpen(!isPopupOpen);
     
     return (
-        <div ref={ref} className={pageClassName} style={pageStyle}>
+        <div id={'NavPage' + index} ref={ref} className={pageClassName} style={pageStyle}>
             <Background className="background" backColor="blue" src={src}></Background>
+            <Popup isOpen={isPopupOpen} onClose={togglePopup}>
+                <VideoPlayer key={fileVideo} src={fileVideo} width="100%" height="auto" controls={true} />
+            </Popup>
+            <BotonWhatsApp onOpenPopup={togglePopup} messageWhapp={whappMessage} />
         </div>
     );
 });
 
 export default Page;
-

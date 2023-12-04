@@ -4,11 +4,10 @@ import whatsappIcon from '../resources/icons/whatsapp.png';
 import messengerIcon from '../resources/icons/messenger.png';
 import playIcon from '../resources/icons/play.png';
 
-const BotonWhatsApp = ({ onOpenPopup }) => {
+const BotonWhatsApp = ({ onOpenPopup, messageWhapp }) => {
     const bannerStyle = {
         position: 'absolute',
-        //bottom: '15%',
-        bottom: '12%', 
+        bottom: '9%', 
         right: '20px',      
         zIndex: 1000,       
         cursor: 'pointer', 
@@ -20,11 +19,8 @@ const BotonWhatsApp = ({ onOpenPopup }) => {
         alignContent: 'center',
         gap: '16px',
         backgroundColor: 'rgba(41, 41, 41, 0.37)',
-        //width: '64px',
         with: 'auto',
         height: 'auto',
-        //paddingTop: '16px',
-        //paddingBottom: '16px',
         paddingTop: '8px',
         paddingBottom: '8px',
         paddingLeft: '16px',
@@ -37,15 +33,14 @@ const BotonWhatsApp = ({ onOpenPopup }) => {
     }
 
     return (
-        //<a href="https://api.whatsapp.com/send/?phone=51920212623" target='_blank' style={botonStyle}>
         <div style={bannerStyle}>
-            <a href="https://wa.me/51920212623?text=Juega !!!" target='_blank'>
+            <a href={`https://wa.me/51920212623?text=Juega !!! ... Quiero ${messageWhapp}`} target='_blank'>
                 <img src={whatsappIcon} className='borderAnimation-whatsapp' alt="WhatsApp" height = '100%' style={linkStyle} />
             </a>
-            <a href="https://wa.me/51920212623?text=Juega !!!" target='_blank'>
-                <img src={messengerIcon} className='borderAnimation-messenger' alt="Messenger" height = '100%' style={linkStyle} />
+            <a href={`https://wa.me/51920212623?text=Juega !!! ... Quiero ${messageWhapp}`} target='_blank'>
+                <img src={messengerIcon} className='borderAnimation-messenger' alt="WhatsApp" height = '100%' style={linkStyle} />
             </a>
-            <a href="#" onClick={onOpenPopup}>
+            <a onClick={onOpenPopup}>
                 <img src={playIcon} className='borderAnimation-media' alt="Media" height = '100%' style={linkStyle} />
             </a>
         </div>

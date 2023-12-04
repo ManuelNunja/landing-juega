@@ -1,5 +1,5 @@
 body{
-  background-color: white;
+  background-color: black;
 }
 h1{
   text-align: center;
@@ -118,3 +118,19 @@ h1{
     opacity: 1;
   }
 } 
+
+.navBarAnimation{
+  animation: animationNavBar 2.1s ease-in-out infinite;
+}
+
+@keyframes animationNavBar{
+  0%{
+    box-shadow: 0px 0px 2px 0px rgba(255,255,255,0.65) inset;
+  }
+  50%{
+    box-shadow: 0px 0px 2px 1px rgba(255,255,255,0.65) inset;
+  }
+  100%{
+    box-shadow: 0px 0px 2px 0px rgba(255,255,255,0.65) inset;
+  }
+}
