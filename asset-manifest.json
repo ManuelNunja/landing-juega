@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/landing-juega/static/css/main.c0b69751.css",
-    "main.js": "/landing-juega/static/js/main.ab2fb7f6.js",
+    "main.css": "/landing-juega/static/css/main.6ec94e08.css",
+    "main.js": "/landing-juega/static/js/main.be01b8ed.js",
     "static/js/787.123bca69.chunk.js": "/landing-juega/static/js/787.123bca69.chunk.js",
     "static/media/video1.mp4": "/landing-juega/static/media/video1.ea0a9a67e42c86ae03dc.mp4",
     "static/media/1.png": "/landing-juega/static/media/1.febfd36ca96590875f64.png",
@@ -25,12 +25,12 @@
     "static/media/messenger.png": "/landing-juega/static/media/messenger.6e4994e48e52315efe8c.png",
     "static/media/play.png": "/landing-juega/static/media/play.dc61ecf90dad1a64179e.png",
     "index.html": "/landing-juega/index.html",
-    "main.c0b69751.css.map": "/landing-juega/static/css/main.c0b69751.css.map",
-    "main.ab2fb7f6.js.map": "/landing-juega/static/js/main.ab2fb7f6.js.map",
+    "main.6ec94e08.css.map": "/landing-juega/static/css/main.6ec94e08.css.map",
+    "main.be01b8ed.js.map": "/landing-juega/static/js/main.be01b8ed.js.map",
     "787.123bca69.chunk.js.map": "/landing-juega/static/js/787.123bca69.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c0b69751.css",
-    "static/js/main.ab2fb7f6.js"
+    "static/css/main.6ec94e08.css",
+    "static/js/main.be01b8ed.js"
   ]
 }
